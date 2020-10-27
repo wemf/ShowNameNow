@@ -23,10 +23,7 @@ public class MyClass {
         boolean isTrue = true; // 1 or 0 WONT WORK!!!!
 
         System.out.println("My name is " + name);
-
-        if(isTrue){
-            System.out.println("I'm " + age + " years old");
-        }
+        System.out.println("I'm " + age + " years old");
 
         MathTesting();
     }
@@ -35,6 +32,7 @@ public class MyClass {
 
         double a = 12;
         int b = 7;
+        double c = Math.random();
 
         double total = a / b;
 
@@ -46,5 +44,10 @@ public class MyClass {
 
         System.out.println("The total is: " + total);
         System.out.println("Remainder is: " + remainder);
+        System.out.println(c);
+
+        if( a == c) {
+            System.out.println("Conditional returned TRUE");
+        }
     }
 }
