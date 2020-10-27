@@ -23,6 +23,7 @@ public class MyClass {
         boolean isTrue = true; // 1 or 0 WONT WORK!!!!
 
         System.out.println("My name is " + name);
+
         if(isTrue){
             System.out.println("I'm " + age + " years old");
         }
@@ -31,11 +32,19 @@ public class MyClass {
     }
 
     public static void MathTesting(){
-        double a = 23;
-        int b = 12;
+
+        double a = 12;
+        int b = 7;
 
         double total = a / b;
 
+        // total = total + 100
+        total += 100;
+
+        // Remainder % == "What remains..."
+        double remainder = a%b;
+
         System.out.println("The total is: " + total);
+        System.out.println("Remainder is: " + remainder);
     }
 }
